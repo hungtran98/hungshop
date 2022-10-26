@@ -1,0 +1,30 @@
+###[GET]  /courses
+GET http://localhost:5000/courses/
+
+###[POST] /courses
+POST http://localhost:5000/courses/
+Content-Type: application/json
+
+{
+    "name": "TÒNG PHU - KEYO | CHU DUYÊN COVER ",
+    "desc": "vì quá ngu si hay vì em đã yêu vội vàng | Nhạc Hot tiktok",
+    "videoId": "0fhQUbnMFao"
+}
+###PUT /courses/:id
+PUT http://localhost:5000/courses/632946387c27c6e680baf8ef
+Content-Type: application/json
+
+{
+    "name": "TÒNG PHU - KEYO Update 04",
+    "videoId": "0fhQUbnMFao"
+    
+}
+
+###DELETE  /courses/:id
+DELETE http://localhost:5000/courses/632946387c27c6e680baf8ef
+
+###PATCH  /courses/:id/restore
+PATCH http://localhost:5000/courses/632946387c27c6e680baf8ef/restore
+
+###DELETE FORCE  /courses/:id/force
+DELETE http://localhost:5000/courses/632946387c27c6e680baf8ef/force
